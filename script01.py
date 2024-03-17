@@ -22,12 +22,10 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("This is a custom command")
+    await update.message.reply_text("This is a custom command.")
 
 
 # Responses
-
-
 def handle_response(text: str) -> str:
     processed: str = text.lower()
     if "hello" in processed:
@@ -52,10 +50,8 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if BOT_USERNAME in text:
             new_text: str = text.replace(BOT_USERNAME, "").strip()
             response: str = handle_response(new_text)
-
         else:
             return
-
     else:
         response: str = handle_response(text)
 
