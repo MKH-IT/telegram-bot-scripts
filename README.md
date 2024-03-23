@@ -1,5 +1,4 @@
-# telegram-bot-scripts
-Telegram bot scripts.
+# Telegram Bot Scripts
 
 ## Code quality
 ```
