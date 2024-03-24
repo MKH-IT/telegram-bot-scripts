@@ -7,8 +7,9 @@ from telegram.ext import (
     filters,
     ContextTypes,
 )
+from decouple import config
 
-TOKEN: Final = ""
+TOKEN: Final = config("TELEGRAM_BOT_TOKEN")
 BOT_USERNAME: Final = ""
 
 

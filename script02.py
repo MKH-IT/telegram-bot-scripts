@@ -1,9 +1,10 @@
 import webbrowser
 
 import telebot
+from decouple import config
 from telebot import types
 
-TOKEN = ""
+TOKEN = config("TELEGRAM_BOT_TOKEN")
 
 bot = telebot.TeleBot(TOKEN)
 
