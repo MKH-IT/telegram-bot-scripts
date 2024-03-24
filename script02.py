@@ -1,3 +1,7 @@
+"""
+Example telegram bot created using telebot library.
+"""
+
 import webbrowser
 
 import telebot

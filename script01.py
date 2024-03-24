@@ -1,3 +1,7 @@
+"""
+Example telegram bot created using python-telegram-bot library.
+"""
+
 from typing import Final
 from telegram import Update
 from telegram.ext import (
